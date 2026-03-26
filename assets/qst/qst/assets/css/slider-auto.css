@@ -1,0 +1,66 @@
+
+
+.sld {
+
+  align-items: center;
+
+  display: flex;
+
+  height: 100vh;
+
+  justify-content: center;
+
+  height: auto;
+
+  margin: auto;
+
+  overflow: hidden;
+
+  position: relative;
+
+  width: 100%;
+
+}
+
+.sld .sldnp-track {
+
+  animation: scroll 15s linear infinite;
+
+  display: flex;
+
+}
+
+.sld .sldnp {
+
+  height: auto;
+
+  width: 70%;
+
+}
+.sld img{
+  border:5px solid white;
+  border-radius: 60px;
+}
+
+
+.sld:hover > div {
+
+  animation-play-state: paused;
+
+}
+
+.sldnp img{
+
+  opacity: 0.5;
+
+
+
+}
+
+.sldnp img:hover{
+
+  opacity: 1;
+
+
+
+}

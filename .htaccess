@@ -1,0 +1,15 @@
+Options All -Indexes 
+
+RewriteEngine On
+
+
+
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 68.183.85.81
+deny from 198.98.51.73
+deny from 125.161.67.227

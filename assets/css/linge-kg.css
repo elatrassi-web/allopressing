@@ -1,0 +1,45 @@
+.pres-linge{
+	max-width: auto;
+	max-height: auto;
+	text-align: center;
+padding-top: 20px;
+margin-top: 20px;
+padding-bottom: 20px;
+color: white;
+margin-left: 30px;
+margin-right: 30px;
+border:1px solid white;
+border-radius: 12px;
+}
+.pres-linge h1{
+	color:#0D80C0;
+	font-weight: bold;
+	font-size: 30px;
+	padding-bottom: 15px;
+}
+.pres-linge h3{
+	color: #474E48;
+	font-weight: bold;
+	font-size: 35px;
+	padding-bottom: 15px;
+}
+.pres-linge p{
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+.pres-img{
+max-width: auto;
+max-height: auto;
+}
+.pres-img img{
+	
+
+	max-height: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	display: block;
+
+}

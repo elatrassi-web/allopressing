@@ -1,0 +1,57 @@
+.info{
+
+}
+
+.imgrepassage{
+    display: grid;
+  grid-template-columns: auto auto auto ;
+}
+
+.info h1{
+    text-align: center;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 30px;
+    color: #5DFC70
+;
+
+}
+.bor{
+border-bottom: 1px solid #5DFC70;
+margin-left: 500px;
+margin-right: 500px;
+}
+.info p{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size:18px;
+    line-height: 26px;
+    color: #747474;
+    text-align: center;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+.imgrepassage img{
+    width:450px ;
+    height:300px;
+}
+.imgrepassage{
+    width: 100%;
+    height: auto;
+}

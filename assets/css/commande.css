@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+* {
+  box-sizing: border-box;
+}
+.cnt {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+    height: 100%;
+    background-color: transparent !important;
+  padding-top: 10px;
+  top: 950px;
+  left: 200px;
+font-weight: bold;
+font-size: 20px;
+}
+
+.cnt {
+  width: auto;
+  margin: auto;
+}
+.btcommande{
+       background: linear-gradient(
+90deg
+, rgba(93,252,197,1) 0%, rgba(93,252,112,1) 57%);
+       border-radius: 20px;
+       border:1px solid #5DFC70;
+color:white;
+width: 350px;
+  height:70px;
+}
+.cnt a:link {
+  color: none;
+}
+
+/* visited link */
+.cnt a:visited {
+  color: none;
+}
+
+/* mouse over link */
+.cnt a:hover {
+  color: none;
+}
+
+/* selected link */
+.cnt a:active {
+  color: none;
+}
+.cnt img{
+    width: 380px;
+    height: 100px;
+    position: relative;
+    margin-top: 400px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.com-menu{
+    width:150px;
+    height:50px;
+    margin-left:17px;
+    display: fix;
+}

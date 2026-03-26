@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test SLider</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/commande.css">
+	<style type="text/css">
+		@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+
+.attri {
+  font-size: 0.5rem;
+  color: grey;
+}
+.slider {
+  font-family: "Abril Fatface", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+ 
+
+}
+
+.slider__item {
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+}
+
+.slider__item:nth-child(1) {
+  background-image: linear-gradient(rgba(45, 172, 189, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/img/une1.jpg");
+  backdrop-filter: blur(4px);
+}
+
+.slider__item:nth-child(2) {
+  backdrop-filter: blur(4px);
+  background-image: linear-gradient(rgba(181, 52, 34, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/img/une3.png");
+}
+.slider__item:nth-child(3) {
+  backdrop-filter: blur(4px);
+  background-image: linear-gradient(rgba(81, 46, 120, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/img/Presentation3.jpeg");
+}
+.slider__item:nth-child(4) {
+  backdrop-filter: blur(4px);
+  background-image: linear-gradient(rgba(81, 46, 120, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/img/une4.jpg");
+}
+.slider__item:nth-child(5) {
+  backdrop-filter: blur(4px);
+  background-image: linear-gradient(rgba(81, 46, 120, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/img/Presentation5.jpeg");
+}
+
+
+.slider__text {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+   
+}
+
+.slider__text p:first-child {
+  font-size: 4rem;
+ 
+}
+
+.slider__text p{
+  line-height: 5rem;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.slider__arrows {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider__arrows--left,
+.slider__arrows--right {
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  color: whitesmoke;
+  text-shadow: 1px 1px #666;
+  font-size: 3.5rem;
+  padding: 0 2rem;
+  cursor: pointer;
+  transition: all 0.5s, opacity 0.5s;
+}
+
+.slider__arrows--left:hover {
+  opacity: 0.6;
+  transform: translateX(-5px);
+  color: #5DFC70;
+
+}
+
+.slider__arrows--right:hover {
+  opacity: 0.6;
+  transform: translateX(5px);
+    color: #5DFC70;
+
+}
+
+.slider__arrows--right:focus,
+.slider__arrows--left:focus {
+  outline: thin dashed rgba(255, 255, 255, 0.651);
+  outline-offset: -4px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+
+nav {
+ 
+
+position:relative;
+  line-height:80px;
+ min-width:100%;
+
+  text-align:center;
+  font-size:13px;
+  text-transform:uppercase;
+   background-color: #ffffff;
+ opacity: 0.2;
+
+}
+.menu-transparent {
+  
+ 
+/* IE6-9 */
+}
+
+nav >a {
+  color:black;
+  margin-left: 20px;
+}
+
+
+body {
+  margin:0;
+  padding:0;
+}
+
+	</style>
+ 
+</head>
+<body>
+  
+  <!-- slider-->
+<div class="slider" id="slideshow">
+
+  <div class="slider__item">
+    <div class="slider__text">
+      <p>Fini La corv&eacute;e de linge !!</p>
+    </div>
+  </div>
+
+  <div class="slider__item">
+    <div class="slider__text">
+      <p>Facilitez-vous la vie et ne vous pr&eacute;occupez plus de la corv&eacute;e du linge</p>
+      <p>Allo Pressing le fait pour vous !</p>
+    </div>
+  </div>
+
+  <div class="slider__item">
+    <div class="slider__text">
+      <p>Nos signes distinctifs sont la qualit&eacute;,<br>l&#145;efficacit&eacute; et l&#145;efficience dans le processus</p>
+    </div>
+  </div>
+  <div class="slider__item">
+    <div class="slider__text">
+      <p> Faites-nous confiance et confiez-nous tous vos v&ecirc;tements,</p>
+      <p>vous en serez pleinement satisfaits.</p>
+    </div>
+  </div>
+   <div class="slider__item">
+    <div class="slider__text">
+      <p>Nos Clients nous Aiment Presque Autant<br> que Nous les Aimons</p>
+    </div>
+  </div>
+
+  <div class="slider__arrows">
+    <button class="slider__arrows--left">&#10094;</button>
+    <button class="slider__arrows--right">&#10095;</button>
+  </div>
+
+   
+ 
+  <nav id="navigation" class="menu-transparent">
+  
+      
+    <a href="/facebook.com">Qui sommes nous ?</a>
+  <a href="">Activités</a>
+  <a href="">Nous contacter</a>
+  
+</nav>
+</div>
+<div class="cnt">
+
+
+
+  <button class="bt" href="#">Passer la commande <img src="assets/img/shop.png"></button>
+
+
+
+</div>
+
+<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+
+<script type="text/javascript">
+	const sliderItems = document.querySelectorAll(".slider__item");
+const btnNext = document.querySelector(".slider__arrows--right");
+const btnBack = document.querySelector(".slider__arrows--left");
+
+const slider = {
+  currentItem: 0,
+
+  init: () => {
+    slider.in(slider.currentItem);
+  },
+
+  in: (index) => {
+    const sliderItem = sliderItems[index];
+    const texts = sliderItem.querySelectorAll("p");
+    gsap.set(sliderItem, { scale: 0 });
+    gsap.set(sliderItem, { left: "-100vw" });
+    const timeline = gsap.timeline();
+
+    timeline
+      .to(sliderItem, 0.5, { left: 0 })
+      .to(sliderItem, 0.5, { scale: 1 })
+      .from(texts, 1, {
+        autoAlpha: 0,
+        ease: Back.easeOut,
+        stagger: {
+          y: 300,
+          each: 0.3
+        }
+      });
+  },
+
+  out: (index, nextIndex) => {
+    const sliderItem = sliderItems[index];
+    const texts = sliderItem.querySelectorAll("p");
+    const timeline = gsap.timeline();
+    timeline
+      .to(sliderItem, 0.5, {
+        left: "100vw",
+        delay: 0.5,
+        scale: 0.3,
+        opacity: 0
+      })
+      .to(texts, 1, {
+        autoAlpha: 0,
+        ease: Back.easeIn,
+        stagger: {
+          y: -300,
+          each: 0.3
+        }
+      })
+      .call(slider.in, [nextIndex], this, "-=1.5")
+      .set([texts, sliderItem], { clearProps: "all" });
+  },
+
+  next: () => {
+    const next =
+      slider.currentItem !== sliderItems.length - 1
+        ? slider.currentItem + 1
+        : 0;
+    slider.out(slider.currentItem, next);
+    slider.currentItem = next;
+  },
+
+  back: () => {
+    const prev =
+      slider.currentItem > 0 ? slider.currentItem - 1 : sliderItems.length - 1;
+    slider.out(slider.currentItem, prev);
+    slider.currentItem = prev;
+  }
+};
+
+// Events
+btnNext.addEventListener("click", slider.next);
+btnBack.addEventListener("click", slider.back);
+
+slider.init();
+
+//auto slider 
+
+
+</script>
+
+</script>
+</body>
+</html>

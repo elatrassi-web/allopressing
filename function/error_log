@@ -1,0 +1,6 @@
+[20-Apr-2021 22:17:52 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'stde7306_simo'@'localhost' (using password: YES) in /home/c1615909c/public_html/function/fucntion_BDD.php on line 6
+[20-Apr-2021 22:17:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/c1615909c/public_html/function/fucntion_BDD.php on line 16
+[20-Apr-2021 22:17:52 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/c1615909c/public_html/function/fucntion_BDD.php on line 60
+[20-Apr-2021 22:19:16 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'stde7306_simo'@'localhost' (using password: YES) in /home/c1615909c/public_html/function/fucntion_BDD.php on line 6
+[20-Apr-2021 22:19:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/c1615909c/public_html/function/fucntion_BDD.php on line 16
+[20-Apr-2021 22:19:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/c1615909c/public_html/function/fucntion_BDD.php on line 60
