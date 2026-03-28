@@ -14,7 +14,7 @@ function OrderForm({ onOrderPlaced }) {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/products');
+      const response = await axios.get(process.env.REACT_APP_API_URL + '/api/products');
       setProducts(response.data['hydra:member'] || []);
     } catch (err) {
       console.error('Failed to fetch products', err);
@@ -61,7 +61,7 @@ function OrderForm({ onOrderPlaced }) {
     };
 
     try {
-      const response = await axios.post('http://localhost:8000/api/orders', orderData, {
+      const response = await axios.post(process.env.REACT_APP_API_URL + '/api/orders', orderData, {
         headers: { 'Content-Type': 'application/ld+json' }
       });
       onOrderPlaced(response.data);

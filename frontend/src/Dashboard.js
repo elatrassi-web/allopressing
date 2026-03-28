@@ -27,7 +27,7 @@ function Dashboard() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/login_check', {
+      const response = await axios.post(process.env.REACT_APP_API_URL + '/api/login_check', {
         email,
         password
       });
@@ -50,13 +50,13 @@ function Dashboard() {
     setLoading(true);
     try {
       if (activeTab === 'orders') {
-        const response = await axios.get('http://localhost:8000/api/orders');
+        const response = await axios.get(process.env.REACT_APP_API_URL + '/api/orders');
         setOrders(response.data['hydra:member']);
       } else if (activeTab === 'products') {
-        const response = await axios.get('http://localhost:8000/api/products');
+        const response = await axios.get(process.env.REACT_APP_API_URL + '/api/products');
         setProducts(response.data['hydra:member']);
       } else if (activeTab === 'customers') {
-        const response = await axios.get('http://localhost:8000/api/customers');
+        const response = await axios.get(process.env.REACT_APP_API_URL + '/api/customers');
         setCustomers(response.data['hydra:member']);
       }
     } catch (error) {
@@ -84,7 +84,7 @@ function Dashboard() {
   const handleAddProduct = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8000/api/products', newProduct, {
+      await axios.post(process.env.REACT_APP_API_URL + '/api/products', newProduct, {
         headers: { 'Content-Type': 'application/ld+json' }
       });
       setShowProductForm(false);
